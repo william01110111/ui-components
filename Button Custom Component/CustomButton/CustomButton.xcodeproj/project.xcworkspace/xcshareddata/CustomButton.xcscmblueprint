@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B21B7A147185B51CDEB1CD068B8DE24BEE32215B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FCE7178F6B4CC8EB10EA07DA7FB8837F41FD1EBF" : 9223372036854775807,
+    "B21B7A147185B51CDEB1CD068B8DE24BEE32215B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73003603-1F6D-4407-946B-F452315C7D6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FCE7178F6B4CC8EB10EA07DA7FB8837F41FD1EBF" : "..",
+    "B21B7A147185B51CDEB1CD068B8DE24BEE32215B" : "ui-components\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CustomButton",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Button Custom Component\/CustomButton\/CustomButton.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:guti7\/ui-components.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B21B7A147185B51CDEB1CD068B8DE24BEE32215B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/guti7\/UIDesign.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCE7178F6B4CC8EB10EA07DA7FB8837F41FD1EBF"
+    }
+  ]
+}

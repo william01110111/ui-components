@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UI_Component" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czq-oY-vBL">
+                                <rect key="frame" x="158" y="537" width="59" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="39C-am-jid"/>
+                                    <constraint firstAttribute="width" constant="59" id="qVm-wN-1MM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMV-DZ-V9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lt-YZ-t7s">
+                                <rect key="frame" x="158" y="596" width="59" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="iw8-eI-dCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPp-9n-kdb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7I-xm-9wM" customClass="ActivityView" customModule="UI_Component" customModuleProvider="target">
+                                <rect key="frame" x="155" y="303" width="64" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="circleAnimation"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="size">
+                                        <size key="value" width="1000" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-kM-zMD" customClass="ActivityView" customModule="UI_Component" customModuleProvider="target">
+                                <rect key="frame" x="155" y="96" width="62" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScalePulseOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumDisplayTime">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="defaultTimeThreshold">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="defaultPadding">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="TimeThreshold">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.79847786854103342" green="0.054960581306990879" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="defaultSize">
+                                        <size key="value" width="1000" height="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c7I-xm-9wM" firstAttribute="centerX" secondItem="czq-oY-vBL" secondAttribute="centerX" id="2Tz-Bf-IsZ"/>
+                            <constraint firstAttribute="bottom" secondItem="6Lt-YZ-t7s" secondAttribute="bottom" constant="20" symbolic="YES" id="8we-It-TjV"/>
+                            <constraint firstItem="XaF-kM-zMD" firstAttribute="leading" secondItem="c7I-xm-9wM" secondAttribute="leading" id="Lh9-g6-f1X"/>
+                            <constraint firstItem="c7I-xm-9wM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pz1-NN-pD8"/>
+                            <constraint firstItem="XaF-kM-zMD" firstAttribute="trailing" secondItem="czq-oY-vBL" secondAttribute="trailing" id="XAD-ft-8oX"/>
+                            <constraint firstItem="czq-oY-vBL" firstAttribute="trailing" secondItem="6Lt-YZ-t7s" secondAttribute="trailing" id="a3v-uj-oPj"/>
+                            <constraint firstItem="XaF-kM-zMD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="d9F-zb-icg"/>
+                            <constraint firstItem="czq-oY-vBL" firstAttribute="leading" secondItem="6Lt-YZ-t7s" secondAttribute="leading" id="eWz-xq-oHN"/>
+                            <constraint firstItem="6Lt-YZ-t7s" firstAttribute="top" secondItem="czq-oY-vBL" secondAttribute="bottom" constant="8" symbolic="YES" id="fn7-lE-ybC"/>
+                            <constraint firstAttribute="bottom" secondItem="XaF-kM-zMD" secondAttribute="bottom" constant="516" id="gNB-AV-Rej"/>
+                            <constraint firstItem="c7I-xm-9wM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l8s-CH-kXR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleAnimation" destination="c7I-xm-9wM" id="uKz-M3-8wa"/>
+                        <outlet property="loading" destination="XaF-kM-zMD" id="Wtu-Vv-fQW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
